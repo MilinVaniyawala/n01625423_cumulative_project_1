@@ -1,0 +1,19 @@
+﻿@model n01625423_cumulative_project_1.Models.Course
+
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Show</h2>
+
+<a class="navlink" href="/Class/List">Back To Classes</a>
+<div id="containershow">
+    <h2>@Model.ClassName</h2>
+
+    <p><b>Class ID : </b>@Model.ClassID</p>
+    <p><b>Class Code : </b>@Model.ClassCode</p>
+    <p><b>Teacher ID : </b>@Model.TeacherId</p>
+    <p><b>Teacher Name : </b>@Model.TeacherName</p>
+    <p><b>Start Date : </b>@Model.StartDate</p>
+    <p><b>End Date : </b>@Model.FinishDate</p>
+</div>

@@ -1,0 +1,25 @@
+﻿@model n01625423_cumulative_project_1.Models.Teacher
+
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Show</h2>
+
+<a class="navlink" href="/Teacher/List">Back To Teachers</a>
+<div id="containershow">
+    <h2>@Model.TeacherFName @Model.TeacherLName</h2>
+
+    <p><b>Employee ID : </b>@Model.EmployeeNumber</p>
+    <p><b>Hire Date : </b>@Model.HireDate</p>
+    <p><b>Salary : </b>@Model.Salary $</p>
+    <h3>Courses</h3>
+
+    @foreach (var course in Model.Courses)
+    {
+        <div class="listitem row">
+            <div class="col-md-12"><b>Course Code : </b>@course.ClassCode</div>
+            <div class="col-md-12"><b>Course Name : </b>@course.ClassName</div>
+        </div>
+    }
+</div>
