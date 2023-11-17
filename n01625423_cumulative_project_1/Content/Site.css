@@ -5,9 +5,67 @@
     padding-right: 15px;
 }
 
+body{
+    background: black;
+    color:white;
+}
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
+}
+
+nav{
+    color: lightblue;
+}
+
+a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+a:hover{
+    color: lightpink;
+}
+
+.main-container{
+    display: flex;
+    flex-direction:row;
+    gap: 2%;
+}
+
+.link-container a {
+    font-size: 24px;
+    color: black;
+}
+
+.link-container a:hover {
+    color: deeppink;
+}
+
+.link-container{
+    margin-top: 12px;
+    height: 120px;
+    width: 320px;
+    font-size: 16px;
+    color: lightblue;
+    background-color: white;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.list-container a{
+    padding: 4px 8px;
+    margin-top: 12px;
+}
+
+.list-container a:hover{
+    background-color: lightblue;
+    color: black;
 }

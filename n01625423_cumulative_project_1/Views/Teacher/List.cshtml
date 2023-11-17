@@ -8,11 +8,11 @@
 
 <p>This page should be showing information about all teachers</p>
 
-<div id="containerlist">
+<div  class="list-container">
     <h2>List of Teachers</h2>
     @foreach (var teacher in Model)
     {
-        <div class="listitem row">
+        <div class="list-item row">
             <div class="col-md-12"><a href="/Teacher/Show/@teacher.TeacherID">@teacher.TeacherFName @teacher.TeacherLName</a></div>
         </div>
     }
